@@ -149,7 +149,7 @@ cd Techattire-store
 yarn start
 ```
 
-Your server will now be running at port 9090
+Your server will now be running at port 9000
 
 ### Running Admin Panel
 
