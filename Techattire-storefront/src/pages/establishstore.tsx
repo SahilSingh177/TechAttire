@@ -1,6 +1,5 @@
 import Head from "@modules/common/components/head"
 import Link from "next/link"
-import UnderlineLink from "@modules/common/components/underline-link"
 const establishstore = () => {
     // const showMessage = () => {
     //     document.getElementById("toast-simple")?.style.display = none;
@@ -15,9 +14,9 @@ const establishstore = () => {
                 <span className="mt-px hidden small:block">
                 </span>
               </a>
-            <UnderlineLink href="/">
+            <Link href="/">
               <a className="text-xl-semi" style={{fontFamily:'Dancing Script, sans-serif',fontSize:"2.9em"}}>TechAttire</a>
-            </UnderlineLink>
+            </Link>
             <div className="flex-1 basis-0" />
           </nav>
         </div>

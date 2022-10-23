@@ -90,7 +90,7 @@ module.exports = {
     images: {
       domains: [
         "127.0.0.1",
-        "http://172.70.103.91:9002",
+        "http://172.22.16.1:9002",
           //any other domains...
       ],
     },
