@@ -65,22 +65,32 @@ const plugins = [
       webhook_secret: process.env.STRIPE_WEBHOOK_SECRET,
     },
   },
+  {
+    resolve: `medusa-file-minio`,
+    options: {
+        endpoint: process.env.MINIO_ENDPOINT,
+        bucket: process.env.MINIO_BUCKET,
+        access_key_id: process.env.MINIO_ACCESS_KEY,
+        secret_access_key: process.env.MINIO_SECRET_KEY,
+    },
+  },
 ];
 
 module.exports = {
   projectConfig: {
     redis_url: REDIS_URL,
     // For more production-like environment install PostgresQL
-    database_url : DATABASE_URL,
-    database_type: "postgres",
+    // database_url : DATABASE_URL,
+    // database_type: "postgres",
     // database_extra: { ssl: { rejectUnauthorized: false } },
-    // database_database: "./medusa-db.sql",
-    // database_type: "sqlite",
+    database_database: "./medusa-db.sql",
+    database_type: "sqlite",
     store_cors: STORE_CORS,
     admin_cors: ADMIN_CORS,
     images: {
       domains: [
         "127.0.0.1",
+        "http://172.70.103.91:9002",
           //any other domains...
       ],
     },

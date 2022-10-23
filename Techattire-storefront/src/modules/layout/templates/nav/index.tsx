@@ -57,7 +57,7 @@ const Nav = () => {
           {
             "!bg-white !border-gray-200": !isHome || isScrolled,
           }
-        )}
+        )} onMouseOver={() => { document.getElementById("navImg")?.setAttribute("src", "https://user-images.githubusercontent.com/96344003/197344656-cbbffdae-b711-45b7-8632-ab7ef238fd79.png") }}
       >
         <nav
           className={clsx(

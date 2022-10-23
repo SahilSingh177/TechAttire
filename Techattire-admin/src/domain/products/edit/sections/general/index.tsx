@@ -113,7 +113,6 @@ const ProductDetails = ({ product }: Props) => {
       <h2 className="inter-base-semibold">Details</h2>
       <Detail title="Subtitle" value={product.subtitle} />
       <Detail title="Handle" value={product.handle} />
-      <Detail title="Type" value={product.type?.value} />
       <Detail title="Collection" value={product.collection?.title} />
       <Detail
         title="Discountable"

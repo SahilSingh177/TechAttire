@@ -69,10 +69,10 @@ const SettingsIndex = () => {
         to={`/a/settings/personal-information`}
       />
       <SettingsCard
-        heading={"hello@medusajs.com"}
+        heading={"techattire@gmail.com"}
         description={"Can’t find the answers you’re looking for?"}
         icon={<MailIcon />}
-        externalLink={"mailto: hello@medusajs.com"}
+        externalLink={"mailto: techattire@gmail.com"}
       />
       <SettingsCard
         heading={"Tax Settings"}

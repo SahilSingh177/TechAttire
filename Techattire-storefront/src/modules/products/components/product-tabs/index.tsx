@@ -63,16 +63,18 @@ const ProductInfoTab = ({ product }: ProductTabsProps) => {
         <div className="flex flex-col gap-y-4">
           <div>
             <span className="font-semibold">Material</span>
-            <p>{product.origin_country ? product.origin_country : "-"}</p>
+            <p>{product.material ? product.material : "-"}</p>
           </div>
           <div>
-            <span className="font-semibold">Country of origin</span>
+            <span className="font-semibold">origin</span>
             <p>{product.origin_country ? product.origin_country : "-"}</p>
           </div>
-          <div>
-            <span className="font-semibold">Type</span>
-            <p>{product.type ? product.type.value : "-"}</p>
-          </div>
+          {product.tags.length ? (
+        <div>
+          <span className="font-semibold">Tags</span>
+          <p>{product.tags ? `${product.tags[0].value}` : "-"}</p>
+        </div>
+      ) : null}
         </div>
         <div className="flex flex-col gap-y-4">
           <div>
@@ -89,11 +91,6 @@ const ProductInfoTab = ({ product }: ProductTabsProps) => {
           </div>
         </div>
       </div>
-      {product.tags.length ? (
-        <div>
-          <span className="font-semibold">Tags</span>
-        </div>
-      ) : null}
     </Tab.Panel>
   )
 }
