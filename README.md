@@ -2,14 +2,6 @@
 
 ![Screenshot (219)](https://user-images.githubusercontent.com/96344003/197389360-d4e19003-af95-43be-b724-a0bd1709b714.png)
 
-# Participants
-
-Github : @SahilSingh177 @annupriy 
-
-Twitter : @SahilSingh10132 @annupriy_ 
-
-Discord : Darklord616#3240 hope_#1612   
-
 
 # About
 
